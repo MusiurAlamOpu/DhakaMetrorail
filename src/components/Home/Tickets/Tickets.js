@@ -1,5 +1,6 @@
 import { Button } from "@material-ui/core";
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Tickets.css";
 
 const TicketCardStyle = {
@@ -23,7 +24,7 @@ const Tickets = () => {
               borderRadius: "30px",
             }}
           >
-            BUY NOW!
+            <Link className="buyButtonlinkStyle" to="/SignIn">BUY NOW!</Link>
           </Button>
         </div>
         <div style={{ height: "25%" }}>
@@ -43,7 +44,7 @@ const Tickets = () => {
               borderRadius: "30px",
             }}
           >
-            BUY NOW!
+            <Link className="buyButtonlinkStyle" to="/SignIn">BUY NOW!</Link>
           </Button>
         </div>
         <div style={{ height: "25%" }}>
@@ -63,7 +64,7 @@ const Tickets = () => {
               borderRadius: "30px",
             }}
           >
-            BUY NOW!
+            <Link className="buyButtonlinkStyle" to="/SignIn">BUY NOW!</Link>
           </Button>
         </div>
         <div style={{ height: "25%" }}>
@@ -83,7 +84,7 @@ const Tickets = () => {
               borderRadius: "30px",
             }}
           >
-            BUY NOW!
+            <Link className="buyButtonlinkStyle" to="/SignIn">BUY NOW!</Link>
           </Button>
         </div>
         <div style={{ height: "25%" }}>

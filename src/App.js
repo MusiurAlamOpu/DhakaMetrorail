@@ -10,6 +10,7 @@ import SignIn from "./components/SignIn/SignIn";
 import SignUp from "./components/SignUp/SignUp";
 import About from "./components/About/About";
 import NavBar from "./components/Home/NavBar/NavBar";
+import Booking from "./components/Booking/Booking";
 
 function App() {
   return (
@@ -31,8 +32,8 @@ function App() {
         <Route path="/About">
           <About />
         </Route>
-        <Route>
-          
+        <Route path="/Booking">
+          <Booking/>
         </Route>
       </Switch>
     </Router>

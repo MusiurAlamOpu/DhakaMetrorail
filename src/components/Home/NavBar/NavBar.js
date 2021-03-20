@@ -4,11 +4,6 @@ import { Nav} from "react-bootstrap";
 import Navbar from 'react-bootstrap/Navbar'
 import { Link } from "react-router-dom";
 import './NavBar.css';
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { fab } from '@fortawesome/free-brands-svg-icons'
-// import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
-
-// library.add(fab, faCheckSquare, faCoffee)
 
 const NavBar = () => {
     const linkStyle = {
@@ -25,7 +20,7 @@ const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Link style={linkStyle} to="/Home">Home</Link>
-            <Link style={linkStyle} to="/">Destination</Link>
+            <Link style={linkStyle} to="/Booking">Booking</Link>
             <Link style={linkStyle} to="/">Blog</Link>
             <Link style={linkStyle} to="/About">About</Link>
           </Nav>

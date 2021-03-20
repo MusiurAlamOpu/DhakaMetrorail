@@ -1,0 +1,62 @@
+.SignWithOthersSite{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    margin: 1% 10%;
+    padding: 2% 0%;
+    border-radius: 10px;
+}
+.SignWithOthersSite:hover{
+    border: 1px solid grey;
+    box-shadow: 2px 2px 5px lightgrey;
+    background-color: rgb(241, 241, 241);
+    cursor: pointer;
+}
+#SignUpTitle{
+    color: #304ffe;
+    transition: 1s;
+}
+#SignUpMainDiv{
+    margin: 5% 20%;
+    border: 1px solid grey;
+    padding: 3%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px lightgrey;
+    transition: 1s;
+}
+@media (max-width: 620px){
+    #SignUpMainDiv{
+        margin: 2%;
+        border: 1px solid grey;
+        padding: 3%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px lightgrey;
+    }
+    #SignUpTitle{
+        font-size: 25px;
+    }
+}
+@media (max-width: 800px){
+    #SignUpMainDiv{
+        margin: 5%;
+        border: 1px solid grey;
+        padding: 3%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px lightgrey;
+    }
+    #SignUpTitle{
+        font-size: 30px;
+    }
+}
+@media (max-width: 1100px){
+    #SignUpMainDiv{
+        margin: 8%;
+        border: 1px solid grey;
+        padding: 4%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px lightgrey;
+    }
+    #SignUpTitle{
+        font-size: 37px;
+    }
+}

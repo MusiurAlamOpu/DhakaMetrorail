@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 650px;
+    height: 750px;
 }
 /* #div1{
     background-image: url('./indigoPurple.png');
@@ -32,4 +32,12 @@
     font-size: 20px!important;
     margin-top: 5px;
     border-radius: 25px!important;
+}
+.buyButtonlinkStyle{
+    text-decoration: none;
+    color: black;
+}
+.buyButtonlinkStyle:hover{
+    text-decoration: none;
+    color: black;
 }

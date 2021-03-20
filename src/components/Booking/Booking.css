@@ -1,0 +1,27 @@
+#mainDiv{
+    display: flex;
+}
+#searchOptions{
+    width: 30%;
+    margin: 5%;
+}
+#mapDiv{
+    width: 50%;
+    margin-top: 5%;
+}
+@media (max-width: 768px){
+    #mainDiv{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    #searchOptions{
+        width: 92%;
+        margin: 4%;
+    }
+    #mapDiv{
+        width: 80%;
+        margin: 10%;
+    }
+}
