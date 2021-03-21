@@ -29,7 +29,7 @@ const SignIn = () => {
         var user = result.user;
         console.log(user);
         const { displayName, email, photoURL } = user;
-        const loggedInUser = { name: displayName, email, photoURL };
+        const loggedInUser = {isSignedIn:true ,name: displayName, email, photoURL };
 
         console.log(loggedInUser);
         setSignedInUser(loggedInUser);
@@ -110,7 +110,9 @@ const SignIn = () => {
         // Signed in
         var user = userCredential.user;
         console.log(user);
+        
         SignedInUser.isSignedIn = true;
+        console.log("error: ", SignedInUser);
         history.replace(from);
         // ...
       })

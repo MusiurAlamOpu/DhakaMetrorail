@@ -20,7 +20,7 @@ function App() {
   return (
     <UserContext.Provider value={[SignedInUser, setSignedInUser]}>
       <TicketContext.Provider value={[TicketType, setTicketType]}>
-        <p> Name: {SignedInUser.name}</p>
+        {/* <p> Name: {SignedInUser.name}</p> */}
         <Router>
           <NavBar />
           <Switch>

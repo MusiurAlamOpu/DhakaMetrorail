@@ -9,9 +9,7 @@ import { UserContext } from "../../../App";
 const NavBar = () => {
   const [SignedInUser, setSignedInUser] = useContext(UserContext);
 
-  if (SignedInUser === {}) {
-    console.log("Nav: ", SignedInUser);
-  }
+  console.log("Nav: ", SignedInUser);
   const userImageUrl = SignedInUser.photoURL;
   const linkStyle = {
     margin: "0px 10px",
@@ -42,29 +40,29 @@ const NavBar = () => {
             </Link>
           </Nav>
           <Nav>
-          {SignedInUser === {} ? (
-            <div>
+          {/* SignedInUser.email */}
+            {(SignedInUser.isSignedIn || SignedInUser.email) && 
+              <div style={{display: 'flex', width: "100%", margin: '4%', color: 'skyblue'}}>
+                
+                  <div><p>{SignedInUser.email}</p></div>
+                 <div style={{width: '90%', marginLeft: '5%'}}><img
+                    style={{ width: "60%", borderRadius: "30px" }}
+                    src={userImageUrl}
+                    alt=""
+                  /></div>
+              </div>
+            }
+            {
+              (!SignedInUser.isSignedIn || SignedInUser.email) &&
+              <div style={{width: "100%"}}>
               <Link style={linkStyle} to="/SignIn" id="signin">
                 Sign In
               </Link>
               <Link style={linkStyle} to="/SignUp" id="signup">
                 Sign Up
               </Link>
-              </div>
-          ) : (
-            <div style={{ width: "40px", backgroundColor: 'white'}}>
-              {userImageUrl === null ? (
-                <p>{SignedInUser.email}</p>
-              ) : (
-                <img
-                  style={{ width: "100%", borderRadius: "30px" }}
-                  src={userImageUrl}
-                  alt=""
-                />
-              )}
-              {/* <img style={{width: '100%', borderRadius: '30px'}} src={userImageUrl} alt=""/> */}
             </div>
-          )}
+            }
           </Nav>
           {/* <Nav>
             <Link style={linkStyle} to="/SignIn" id="signin">
