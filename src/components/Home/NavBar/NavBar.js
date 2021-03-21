@@ -8,8 +8,8 @@ import { UserContext } from "../../../App";
 
 const NavBar = () => {
   const [SignedInUser, setSignedInUser] = useContext(UserContext);
-  
-  if(SignedInUser === {}){
+
+  if (SignedInUser === {}) {
     console.log("Nav: ", SignedInUser);
   }
   const userImageUrl = SignedInUser.photoURL;
@@ -41,21 +41,31 @@ const NavBar = () => {
               About
             </Link>
           </Nav>
-          {
-            SignedInUser === {} ?
-            <Nav>
-            <Link style={linkStyle} to="/SignIn" id="signin">
-              Sign In
-            </Link>
-            <Link style={linkStyle} to="/SignUp" id="signup">
-              Sign Up
-            </Link>
+          <Nav>
+          {SignedInUser === {} ? (
+            <div>
+              <Link style={linkStyle} to="/SignIn" id="signin">
+                Sign In
+              </Link>
+              <Link style={linkStyle} to="/SignUp" id="signup">
+                Sign Up
+              </Link>
+              </div>
+          ) : (
+            <div style={{ width: "40px", backgroundColor: 'white'}}>
+              {userImageUrl === null ? (
+                <p>{SignedInUser.email}</p>
+              ) : (
+                <img
+                  style={{ width: "100%", borderRadius: "30px" }}
+                  src={userImageUrl}
+                  alt=""
+                />
+              )}
+              {/* <img style={{width: '100%', borderRadius: '30px'}} src={userImageUrl} alt=""/> */}
+            </div>
+          )}
           </Nav>
-          :
-          <div style={{width: '40px'}}>
-            <img style={{width: '100%', borderRadius: '30px'}} src={userImageUrl} alt=""/>
-          </div>
-          }
           {/* <Nav>
             <Link style={linkStyle} to="/SignIn" id="signin">
               Sign In

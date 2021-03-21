@@ -1,14 +1,23 @@
 import { Button } from "@material-ui/core";
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { TicketContext } from "../../../App";
 import "./Tickets.css";
 
-const TicketCardStyle = {
-  width: "270px",
-  height: "350px",
-  textAlign: "center",
-};
+
 const Tickets = () => {
+  const [TicketType, setTicketType] = useContext(TicketContext);
+  console.log(TicketType);
+  const TicketCardStyle = {
+    width: "270px",
+    height: "350px",
+    textAlign: "center",
+  };
+  const ticketButtonHandler = (props) => {
+    console.log(props);
+    setTicketType(props);
+  }
+  console.log(TicketType);
   return (
     <div id="ticketStyle">
           {/* div1 */}
@@ -23,7 +32,7 @@ const Tickets = () => {
               marginTop: "5px",
               borderRadius: "30px",
             }}
-            
+            onClick={()=>ticketButtonHandler("One Time Ticket")}
           >
             <Link className="buyButtonlinkStyle" to="/Booking">BUY NOW!</Link>
           </Button>
@@ -44,6 +53,7 @@ const Tickets = () => {
               marginTop: "5px",
               borderRadius: "30px",
             }}
+            onClick={()=>ticketButtonHandler("One Day Pass")}
           >
             <Link className="buyButtonlinkStyle" to="/Booking">BUY NOW!</Link>
           </Button>
@@ -64,6 +74,7 @@ const Tickets = () => {
               marginTop: "5px",
               borderRadius: "30px",
             }}
+            onClick={()=>ticketButtonHandler("Monthly Pass")}
           >
             <Link className="buyButtonlinkStyle" to="/Booking">BUY NOW!</Link>
           </Button>
@@ -84,6 +95,7 @@ const Tickets = () => {
               marginTop: "5px",
               borderRadius: "30px",
             }}
+            onClick={()=>ticketButtonHandler("Annual Pass")}
           >
             <Link className="buyButtonlinkStyle" to="/Booking">BUY NOW!</Link>
           </Button>

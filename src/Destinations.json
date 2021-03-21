@@ -1,42 +1,102 @@
 [
     {
         "id": "1",
-        "name": "Bashundhora"
+        "name": "Bashundhora",
+        "price": "200",
+        "ticketImage1": "https://p7.hiclipart.com/preview/29/205/115/airplane-flight-airline-ticket-computer-icons-tickets.jpg",
+        "ticketImage2": "https://p7.hiclipart.com/preview/645/836/1016/raffle-ticket-stock-photography-prize-others.jpg",
+        "ticketImage3": "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX21763377.jpg",
+        "ticketImage4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUUJV9OITSKOcclYEleX3OnnTAelLpVhX2A&usqp=CAU",
+        "passengerNumber": "1"
     },
     {
         "id": "2",
-        "name": "Baridhara"
+        "name": "Baridhara",
+        "price": "200",
+        "ticketImage1": "https://p7.hiclipart.com/preview/29/205/115/airplane-flight-airline-ticket-computer-icons-tickets.jpg",
+        "ticketImage2": "https://p7.hiclipart.com/preview/645/836/1016/raffle-ticket-stock-photography-prize-others.jpg",
+        "ticketImage3": "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX21763377.jpg",
+        "ticketImage4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUUJV9OITSKOcclYEleX3OnnTAelLpVhX2A&usqp=CAU",
+        "passengerNumber": "1"
     },
     {
         "id": "3",
-        "name": "Dhanmondi"
+        "name": "Dhanmondi",
+        "price": "200",
+        "ticketImage1": "https://p7.hiclipart.com/preview/29/205/115/airplane-flight-airline-ticket-computer-icons-tickets.jpg",
+        "ticketImage2": "https://p7.hiclipart.com/preview/645/836/1016/raffle-ticket-stock-photography-prize-others.jpg",
+        "ticketImage3": "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX21763377.jpg",
+        "ticketImage4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUUJV9OITSKOcclYEleX3OnnTAelLpVhX2A&usqp=CAU",
+        "passengerNumber": "1"
     },
     {
         "id": "4",
-        "name": "Hatirjhil"
+        "name": "Hatirjhil",
+        "price": "200",
+        "ticketImage1": "https://p7.hiclipart.com/preview/29/205/115/airplane-flight-airline-ticket-computer-icons-tickets.jpg",
+        "ticketImage2": "https://p7.hiclipart.com/preview/645/836/1016/raffle-ticket-stock-photography-prize-others.jpg",
+        "ticketImage3": "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX21763377.jpg",
+        "ticketImage4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUUJV9OITSKOcclYEleX3OnnTAelLpVhX2A&usqp=CAU",
+        "passengerNumber": "1"
     },
     {
         "id": "5",
-        "name": "Gulshan"
+        "name": "Gulshan",
+        "price": "200",
+        "ticketImage1": "https://p7.hiclipart.com/preview/29/205/115/airplane-flight-airline-ticket-computer-icons-tickets.jpg",
+        "ticketImage2": "https://p7.hiclipart.com/preview/645/836/1016/raffle-ticket-stock-photography-prize-others.jpg",
+        "ticketImage3": "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX21763377.jpg",
+        "ticketImage4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUUJV9OITSKOcclYEleX3OnnTAelLpVhX2A&usqp=CAU",
+        "passengerNumber": "1"
     },
     {
         "id": "6",
-        "name": "Kamrangir Char"
+        "name": "Kamrangir Char",
+        "price": "200",
+        "ticketImage1": "https://p7.hiclipart.com/preview/29/205/115/airplane-flight-airline-ticket-computer-icons-tickets.jpg",
+        "ticketImage2": "https://p7.hiclipart.com/preview/645/836/1016/raffle-ticket-stock-photography-prize-others.jpg",
+        "ticketImage3": "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX21763377.jpg",
+        "ticketImage4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUUJV9OITSKOcclYEleX3OnnTAelLpVhX2A&usqp=CAU",
+        "passengerNumber": "1"
     },
     {
         "id": "7",
-        "name": "TSC more"
+        "name": "Mirpur-4",
+        "price": "200",
+        "ticketImage1": "https://p7.hiclipart.com/preview/29/205/115/airplane-flight-airline-ticket-computer-icons-tickets.jpg",
+        "ticketImage2": "https://p7.hiclipart.com/preview/645/836/1016/raffle-ticket-stock-photography-prize-others.jpg",
+        "ticketImage3": "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX21763377.jpg",
+        "ticketImage4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUUJV9OITSKOcclYEleX3OnnTAelLpVhX2A&usqp=CAU",
+        "passengerNumber": "1"
     },
     {
         "id": "8",
-        "name": "Mirpur-1"
+        "name": "Mirpur-1",
+        "price": "200",
+        "ticketImage1": "https://p7.hiclipart.com/preview/29/205/115/airplane-flight-airline-ticket-computer-icons-tickets.jpg",
+        "ticketImage2": "https://p7.hiclipart.com/preview/645/836/1016/raffle-ticket-stock-photography-prize-others.jpg",
+        "ticketImage3": "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX21763377.jpg",
+        "ticketImage4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUUJV9OITSKOcclYEleX3OnnTAelLpVhX2A&usqp=CAU",
+        "passengerNumber": "1"
     },
     {
         "id": "9",
-        "name": "Mirpur-2"
+        "name": "Mirpur-2",
+        "price": "200",
+        "ticketImage1": "https://p7.hiclipart.com/preview/29/205/115/airplane-flight-airline-ticket-computer-icons-tickets.jpg",
+        "ticketImage2": "https://p7.hiclipart.com/preview/645/836/1016/raffle-ticket-stock-photography-prize-others.jpg",
+        "ticketImage3": "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX21763377.jpg",
+        "ticketImage4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUUJV9OITSKOcclYEleX3OnnTAelLpVhX2A&usqp=CAU",
+        "passengerNumber": "1"
     },
     {
         "id": "10",
-        "name": "Mirpur-3"
+        "name": "Mirpur-3",
+        "price": "200",
+        "ticketImage1": "https://p7.hiclipart.com/preview/29/205/115/airplane-flight-airline-ticket-computer-icons-tickets.jpg",
+        "ticketImage2": "https://p7.hiclipart.com/preview/645/836/1016/raffle-ticket-stock-photography-prize-others.jpg",
+        "ticketImage3": "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX21763377.jpg",
+        "ticketImage4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUUJV9OITSKOcclYEleX3OnnTAelLpVhX2A&usqp=CAU",
+        "passengerNumber": "1"
     }
 ]
