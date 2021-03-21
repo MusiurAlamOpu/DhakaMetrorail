@@ -11,9 +11,18 @@ import SignUp from "./components/SignUp/SignUp";
 import About from "./components/About/About";
 import NavBar from "./components/Home/NavBar/NavBar";
 import Booking from "./components/Booking/Booking";
+import { createContext, useState } from "react";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+// import { ThemeConsumer } from "react-bootstrap/esm/ThemeProvider";
+
+
+export const UserContext = createContext();
 
 function App() {
+  const [SignedInUser, setSignedInUser] = useState({});
   return (
+    <UserContext.Provider value={[SignedInUser, setSignedInUser]}>
+      {/* <p> Name: {SignedInUser.name}</p> */}
     <Router>
       <NavBar/>
       <Switch>
@@ -32,11 +41,15 @@ function App() {
         <Route path="/About">
           <About />
         </Route>
-        <Route path="/Booking">
+        <PrivateRoute path="/Booking">
           <Booking/>
-        </Route>
+        </PrivateRoute>
+        {/* <Route path="/Booking">
+          <Booking/>
+        </Route> */}
       </Switch>
     </Router>
+    </UserContext.Provider>
   );
 }
 

@@ -1,11 +1,15 @@
 import { Button } from "@material-ui/core";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Form } from "react-bootstrap";
 import MapImage from "./map.png";
-import './Booking.css';
+import "./Booking.css";
+import fakeData from "../../Destinations.json";
 // import { Link } from "react-router-dom";
 
 const Booking = () => {
+  const [destinations, setDestination] = useState(fakeData);
+  // setDestination(fakeData);
+  console.log("des: ", destinations);
   return (
     <div>
       <div id="mainDiv">
@@ -14,21 +18,17 @@ const Booking = () => {
             <div class="form-group">
               <label for="exampleFormControlSelect1">Select From</label>
               <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                {destinations.map((destination) => (
+                  <option>{destination.name}</option>
+                ))}
               </select>
             </div>
             <div class="form-group">
               <label for="exampleFormControlSelect1">Select Destination</label>
               <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                {destinations.map((destination) => (
+                  <option key={destination.id}>{destination.name}</option>
+                ))}
               </select>
             </div>
             <div class="form-group">
@@ -52,7 +52,11 @@ const Booking = () => {
           </Form>
         </div>
         <div id="mapDiv">
-          <img style={{ width: "100%", borderRadius: '20px'}} src={MapImage} alt="" />
+          <img
+            style={{ width: "100%", borderRadius: "20px" }}
+            src={MapImage}
+            alt=""
+          />
         </div>
       </div>
     </div>

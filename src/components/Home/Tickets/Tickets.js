@@ -23,8 +23,9 @@ const Tickets = () => {
               marginTop: "5px",
               borderRadius: "30px",
             }}
+            
           >
-            <Link className="buyButtonlinkStyle" to="/SignIn">BUY NOW!</Link>
+            <Link className="buyButtonlinkStyle" to="/Booking">BUY NOW!</Link>
           </Button>
         </div>
         <div style={{ height: "25%" }}>
@@ -44,7 +45,7 @@ const Tickets = () => {
               borderRadius: "30px",
             }}
           >
-            <Link className="buyButtonlinkStyle" to="/SignIn">BUY NOW!</Link>
+            <Link className="buyButtonlinkStyle" to="/Booking">BUY NOW!</Link>
           </Button>
         </div>
         <div style={{ height: "25%" }}>
@@ -64,7 +65,7 @@ const Tickets = () => {
               borderRadius: "30px",
             }}
           >
-            <Link className="buyButtonlinkStyle" to="/SignIn">BUY NOW!</Link>
+            <Link className="buyButtonlinkStyle" to="/Booking">BUY NOW!</Link>
           </Button>
         </div>
         <div style={{ height: "25%" }}>
@@ -84,7 +85,7 @@ const Tickets = () => {
               borderRadius: "30px",
             }}
           >
-            <Link className="buyButtonlinkStyle" to="/SignIn">BUY NOW!</Link>
+            <Link className="buyButtonlinkStyle" to="/Booking">BUY NOW!</Link>
           </Button>
         </div>
         <div style={{ height: "25%" }}>
