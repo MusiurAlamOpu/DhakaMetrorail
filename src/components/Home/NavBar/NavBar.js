@@ -8,7 +8,8 @@ import { UserContext } from "../../../App";
 
 const NavBar = () => {
   const [SignedInUser, setSignedInUser] = useContext(UserContext);
-
+  const { isSignedIn, photoURL, email, name } = SignedInUser;
+  console.log(isSignedIn, photoURL, email);
   console.log("Nav: ", SignedInUser);
   const userImageUrl = SignedInUser.photoURL;
   const linkStyle = {
@@ -17,6 +18,9 @@ const NavBar = () => {
     pointer: "hand",
     textDecoration: "none",
   };
+
+  ///offline
+  // SignedInUser.isSignedIn = true;
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -40,38 +44,32 @@ const NavBar = () => {
             </Link>
           </Nav>
           <Nav>
-          {/* SignedInUser.email */}
-            {(SignedInUser.isSignedIn || SignedInUser.email) && 
-              <div style={{display: 'flex', width: "100%", margin: '4%', color: 'skyblue'}}>
-                
-                  <div><p>{SignedInUser.email}</p></div>
-                 <div style={{width: '90%', marginLeft: '5%'}}><img
-                    style={{ width: "60%", borderRadius: "30px" }}
-                    src={userImageUrl}
+            {isSignedIn ? (
+              photoURL === undefined ? (
+                <div>{name}</div>
+              ) : (
+                <div>
+                  <img
+                    style={{
+                      borderRadius: "50%",
+                      width: "40px",
+                    }}
+                    src={photoURL}
                     alt=""
-                  /></div>
+                  ></img>
+                </div>
+              )
+            ) : (
+              <div>
+                <Link style={linkStyle} to="/SignIn" id="signin">
+                  Sign In
+                </Link>
+                <Link style={linkStyle} to="/SignUp" id="signup">
+                  Sign Up
+                </Link>
               </div>
-            }
-            {
-              (!SignedInUser.isSignedIn || SignedInUser.email) &&
-              <div style={{width: "100%"}}>
-              <Link style={linkStyle} to="/SignIn" id="signin">
-                Sign In
-              </Link>
-              <Link style={linkStyle} to="/SignUp" id="signup">
-                Sign Up
-              </Link>
-            </div>
-            }
+            )}
           </Nav>
-          {/* <Nav>
-            <Link style={linkStyle} to="/SignIn" id="signin">
-              Sign In
-            </Link>
-            <Link style={linkStyle} to="/SignUp" id="signup">
-              Sign Up
-            </Link>
-          </Nav> */}
         </Navbar.Collapse>
       </Navbar>
     </div>

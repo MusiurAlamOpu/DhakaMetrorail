@@ -40,11 +40,11 @@ const TicketCard = (props) => {
         <div
           style={{
             borderRadius: "10px",
-            backgroundColor: "orangered",
+            backgroundColor: "#318CE7",
             color: "white",
-            width: "90%",
+            width: "96%",
             padding: "5%",
-            margin: "5%",
+            margin: "2%",
             fontSize: "20px",
           }}
         >
@@ -57,11 +57,12 @@ const TicketCard = (props) => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            backgroundColor: "lightgreen",
+            backgroundColor: "#2ECFA8",
             borderRadius: "10px",
             width: "96%",
             margin: "2%",
-            paddingTop: "4%" 
+            paddingTop: "4%",
+            color: "white",
           }}
         >
           <div style={{ width: "30%", textAlign: "center" }}>
@@ -74,8 +75,14 @@ const TicketCard = (props) => {
             <p style={{ fontSize: "15px" }}>Price</p>
           </div>
         </div>
-
         {/* ///////// */}
+        <span
+          style={{
+            margin: "3%",
+          }}
+        >
+          Selected Tickets:
+        </span>
         <div
           style={{
             display: "flex",
@@ -102,6 +109,13 @@ const TicketCard = (props) => {
             <p>{fakeInfo[0].price}</p>
           </div>
         </div>
+        <span
+          style={{
+            margin: "3%",
+          }}
+        >
+          All Tickets that are available:
+        </span>
         <div
           style={{
             display: "flex",
